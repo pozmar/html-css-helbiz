@@ -63,56 +63,124 @@ vertical-align: middle;
   text-transform: capitalize;
 }
 .btn{
-
   height: 150px;
-  width: 55%;
+  width: 65%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.btn-first, .btn-second{
-
-  height: 80px;
+.btn-left, .btn-right{
   width: 45%;
+  height: 80px;
+  position: relative;
+  top: 30px;
+  background-color: black;
 }
-.btn-first{
+.btn-left{
   float: left;
-  background-color: black;
+  position: relative;
 }
-.btn-second{
+.btn-right{
   float: right;
-  background-color: black;
 }
-.ic{
+.icon{
   color: white;
+  float: left;
   line-height: 80px;
 }
-.btn p{
-  display: inline-block;
-color: white;
+.icon i{
+  line-height: 80px;
+}
+.text-icon{
+  margin-left: 0.5rem;
+  position: relative;
+
+}
+.btn-left .text-icon p{
   font-size: 0.5rem;
-  text-align: left;
-  vertical-align: top;
-  margin: 0;
 }
-.btn-first .app{
-  font-size: 1.5rem;
+.btn-right .text-icon p{
+  font-size: 0.8rem;
 }
-.btn-second .app{
-  font-size: 1.3rem;
+.text-icon p {
+  color: white;
+  margin-left: 0.8rem;
+  margin-top: 20px;
+}
+.btn-left .big{
+  font-size: 2rem;
+}
+.btn-right .big{
+  font-size: 1.8rem;
 }
 /*MEDIA QUERIES*/
-@media screen and (min-width:769px) and (max-width:992px){
-  .ic{
-    width: 10px;
-    height: 10px;
-  }
+@media screen and (max-width: 480px){
+.box-main{
+  width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
 
-  .btn{
-    width: 70%;
+}
+.btn{
+  width: 80%;
+  position: absolute;
+  top:70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+  .btn-left .big{
+    font-size: 1rem;
+  }
+  .btn-right .big{
+    font-size: 0.7rem;
+  }
+  .fa-4x{
+    font-size: 2rem;
   }
 }
-@media screen and (min-width:480px) and (max-width:768px) {
+@media screen and (min-width:481px) and (max-width:768px) {
+.box-main{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.box-text{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.btn{
+  width: 100%;
+  position: absolute;
+  top:60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+  .btn-left .big{
+    font-size: 1.3rem;
+  }
+  .btn-right .big{
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+  .btn{
+    width: 90%;
+  }
+  .btn-left .big{
+    font-size: 1.7rem;
+  }
+  .btn-right .big{
+    font-size: 1.4rem;
+  }
+  .btn-left, .btn-right{
+    width: 45%;
 
+}
+p{
+  display: inline-block;
+}
 }
