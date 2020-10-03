@@ -149,40 +149,18 @@ vertical-align: middle;
 /*SECONDA SEZIONE*/
 .second_container{
   height: 800px;
-  background-image: url("../img/sfondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
-
-
-.immagine {
-  position: relative;
-  height: 600px;
-  width: 100%;
-  border: 3px solid black;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.row-testo{
+  height: 300px;
 }
-.immagine img{
-  height: 600px;
+.cell{
+  height: 500px;
   width: auto;
-  text-align: center;
   position: relative;
-  left: 40%;
-}
-.immagine h2{
-  display: inline-block;
-  float: left;
-  position: absolute;
-  top: 30rem;
-  left: 15rem;
-  font-size: 4rem;
-}
+  top:0;
 
-
+}
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 480px){
