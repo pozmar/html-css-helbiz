@@ -8,6 +8,7 @@ height: 100%;
 display: inline-block;
 vertical-align: middle;
 }*/
+/*HEADER*/
 .logo{
   line-height: 100px;
 }
@@ -44,6 +45,7 @@ vertical-align: middle;
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
+  margin: 0;
 
 }
 .box-main{
@@ -76,6 +78,7 @@ vertical-align: middle;
   position: relative;
   top: 30px;
   background-color: black;
+  border-radius: 5px;
 }
 .btn-left{
   float: left;
@@ -114,23 +117,49 @@ vertical-align: middle;
 .btn-right .big{
   font-size: 1.8rem;
 }
+.first_container{
+  height: 1000px;
+  border: 1px solid black;
+}
+.first_container{
+  position: relative;
+}
+.first_container [class*="col-"]{
+  border: 1px solid red;
+}
+
+.row-top{
+  text-align: center;
+}
+.first_container .row-pic img{
+  height: 450px;
+  width: auto;
+}
+.row-pic{
+  text-align: center;
+}
+
+.container-go, .container-bike{
+  background-color: lightgrey;
+  width: 90%;
+}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 480px){
-.box-main{
-  width: 100%;
+  .box-main{
+    width: 100%;
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -25%);
 
-}
-.btn{
-  width: 80%;
-  position: absolute;
-  top:70%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-}
+  }
+  .btn{
+    width: 80%;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
   .btn-left .big{
     font-size: 1rem;
   }
@@ -142,23 +171,23 @@ vertical-align: middle;
   }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
-.box-main{
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -25%);
-}
-.box-text{
-  width: 100%;
-  margin-bottom: 50px;
-}
-.btn{
-  width: 100%;
-  position: absolute;
-  top:60%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-}
+  .box-main{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+  .box-text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .btn{
+    width: 100%;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
   .btn-left .big{
     font-size: 1.3rem;
   }
@@ -179,8 +208,8 @@ vertical-align: middle;
   .btn-left, .btn-right{
     width: 45%;
 
-}
-p{
-  display: inline-block;
-}
+  }
+  p{
+    display: inline-block;
+  }
 }

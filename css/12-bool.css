@@ -197,7 +197,7 @@
     width: calc((100% / 12) * 5);
   }
 
-  .col-lg- {
+  .col-lg-6 {
     width: calc((100% / 12) * 6);
   }
   .col-lg-7 {
