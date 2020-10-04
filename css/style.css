@@ -196,10 +196,63 @@ position: relative;
 /*TERZA SEZIONE*/
 .third_container{
   height: 1000px;
-  border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
 }
+.top-img{
+  height: 500px;
+  position: relative;
+  background-image: url("../img/top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.smart{
+  height: 300px;
+  width: 300px;
+  float: right;
+  position: absolute;
+  top:30%;
+  right: 10%;
+  text-align: center;
+  line-height: 2rem;
+}
+.font a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+.font h2{
+  font-size: 2rem;
+  color: white;
+}
+.font p{
+  font-size: 1.3rem;
+  color: white;
+}
+
+.l-map, .r-landscape{
+  height: 360px;
+  margin: 20px;
+  text-align: center;
+}
+.l-map{
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.pos{
+  margin-top: 20px;
+  line-height: 2rem;
+  padding-top: 20px;
+}
+.r-landscape{
+  background-image: url("../img/land.jpg");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
+}
+/*QUARTA SEZIONE*/
 /*MEDIA QUERIES*/
 @media screen and (max-width: 480px){
   .box-main{
@@ -225,6 +278,28 @@ position: relative;
   }
   .fa-4x{
     font-size: 2rem;
+  }
+  .smart{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  .font h2{
+    font-size: 1rem;
+  }
+  .font p{
+    font-size: 0.8rem;
+  }
+  .font a{
+    font-size: 0.8rem;
+  }
+  .smart, .pos{
+    line-height: 0.9rem;
+  }
+  .top-img{
+    height: 250px;
   }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -275,6 +350,44 @@ position: relative;
     position: relative;
     left: 50%;
   }
+  .l-map, .r-landscape{
+    margin: 5px;
+    height: 300px;
+  }
+  .font h2{
+    font-size: 1rem;
+  }
+  .font p{
+    font-size: 0.8rem;
+  }
+  .font a{
+    font-size: 0.8rem;
+  }
+  .smart, .pos{
+    line-height: 0.9rem;
+  }
+  .smart{
+    width: 80%;
+    height: auto;
+  }
+  .l-map, .r-landscape{
+    margin: 5px;
+    height: 300px;
+  }
+  .font h2{
+    font-size: 1.5rem;
+  }
+  .font p{
+    font-size: 0.9rem;
+  }
+  .font a{
+    font-size: 0.9rem;
+  }
+  .smart, .pos{
+    line-height: 1.3rem;
+  }
+
+
 }
 @media screen and (min-width:769px) and (max-width:992px){
   .btn{
@@ -314,4 +427,20 @@ position: relative;
     position: absolute;
     top: 40%;
     right: 5%;
+  }
+  .l-map, .r-landscape{
+    margin: 5px;
+    height: 300px;
+  }
+  .font h2{
+    font-size: 1.5rem;
+  }
+  .font p{
+    font-size: 0.9rem;
+  }
+  .font a{
+    font-size: 0.9rem;
+  }
+  .smart, .pos{
+    line-height: 1.3rem;
   }
