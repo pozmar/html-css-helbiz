@@ -148,20 +148,59 @@ vertical-align: middle;
 }
 /*SECONDA SEZIONE*/
 .second_container{
-  height: 800px;
+  height: 1000px;
+  position: relative;
+  background-image: url("../img/sfondo.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+border: 1px solid blue;
+}
+/*
+.row-img{
   position: relative;
 }
-.row-testo{
+*/
+.slider{
   height: 300px;
+  position: relative;
+  border: 1px solid green;
 }
 .cell{
   height: 500px;
   width: auto;
-  position: relative;
-  top:0;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  border: 1px solid grey;
+}
+.cell img{
+  height: 500px;
+width: auto;
+}
+.left{
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  height: 100px;
+  width: auto;
+  border: 1px solid red;
 
 }
-
+.right{
+  position: absolute;
+  top: 70%;
+  right: 30%;
+  height: 100px;
+  width: auto;
+  border: 1px solid red;
+}
+/*TERZA SEZIONE*/
+.third_container{
+  height: 1000px;
+  max-width:1170px;
+  border: 1px solid black;
+  margin-left:
+}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 480px){
   .box-main{
