@@ -252,6 +252,9 @@ position: relative;
   background-position: inherit;
   background-size: cover;
 }
+.clearfix{
+  clear: both;
+}
 /*QUARTA SEZIONE*/
 .fourth_container{
   height: 600px;
@@ -263,7 +266,6 @@ position: relative;
 }
 .box-white{
   height: 300px;
-  border: 1px solid black;
   background-color: white;
   width: 40%;
   position: absolute;
@@ -278,9 +280,6 @@ position: relative;
 }
 .row-t, .row-b{
   height: 150px;
-}
-.box-white [class*="col-"]{
-  border: 1px solid red;
 }
 .row-b ul li{
   display: inline-block;
@@ -333,6 +332,9 @@ position: relative;
   }
   .top-img{
     height: 250px;
+  }
+  .box-white{
+    width: 70%;
   }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -419,7 +421,10 @@ position: relative;
   .smart, .pos{
     line-height: 1.3rem;
   }
+  .box-white{
+    width: 70%;
 
+  }
 
 }
 @media screen and (min-width:769px) and (max-width:992px){
